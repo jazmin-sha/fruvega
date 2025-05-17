@@ -1,0 +1,24 @@
+name: Deploy to Cloudflare
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: Deploy to Pages
+              uses: cloudflare/pages-action@v1
+              with:
+                  apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+                  accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+                  projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+                  directory: ./
+
+                  # sl-Ds2d85jLAo25DdoAlSRBKI-fHWPIyMGIGtRoe
+                  # dbed3450d57a910cb9fa3636e15bdd3e
+                  # fruvega
