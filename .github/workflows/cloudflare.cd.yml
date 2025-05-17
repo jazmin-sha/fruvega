@@ -18,7 +18,3 @@ jobs:
                   accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
                   projectName: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
                   directory: ./
-
-                  # sl-Ds2d85jLAo25DdoAlSRBKI-fHWPIyMGIGtRoe
-                  # dbed3450d57a910cb9fa3636e15bdd3e
-                  # fruvega
