@@ -93,7 +93,7 @@
     }
 
     async function processProductPrices() {
-        const countryCode = await detectCountryCode();
+        const countryCode = window.__COUNTRY__ || (await detectCountryCode());
 
         const countryMap = {
             US: 'USA',
