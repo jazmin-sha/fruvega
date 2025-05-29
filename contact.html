@@ -135,7 +135,7 @@
                 <div class="site-logo-wrap">
                   <div class="site-logo">
                     <a href="index.html"
-                      ><img src="img/logo-2.png" alt="Logo"
+                      ><img src="img/fruWhite.png" alt="Logo"
                     /></a>
                   </div>
                 </div>
@@ -829,7 +829,7 @@
                   <div class="footer-newsletter">
                     <div id="mc_embed_signup">
                       <form
-                        action="https://gmail.us5.list-manage.com/subscribe/post?u=dde0a42ff09e8d43cad40dc82&amp;id=72d274d15d"
+                        action="https://formsubmit.co/jazminshanu642k@gmail.com"
                         method="post"
                         id="mc-embedded-subscribe-form"
                         name="mc-embedded-subscribe-form"
@@ -927,9 +927,22 @@
     <!-- Body main wrapper end -->
 
     <!-- All JS Plugins -->
+    <script>
+      const form = document.getElementById("mc-embedded-subscribe-form");
+      const blacklist = ["spam@example.com", "bot@bad.com", "junk@mail.com"]; // Add blacklisted emails here
+
+      form.addEventListener("submit", function (e) {
+        const email = document.getElementById("email").value.toLowerCase();
+
+        if (blacklist.includes(email)) {
+          e.preventDefault(); // stop form submission
+          alert("This email is not allowed.");
+        }
+      });
+    </script>
     <script src="js/plugins.js"></script>
     <!-- Contact Form -->
-    <script src="js/contact.js"></script>
+    <!-- <script src="js/contact.js"></script> -->
     <!-- Main JS -->
     <script src="js/main.js"></script>
   </body>
