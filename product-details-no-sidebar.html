@@ -714,6 +714,20 @@
                       <hr />
                       <div class="ltn__social-media">
                         <ul>
+                          <li>
+                            <a
+                              href="#"
+                              title="Copy Link"
+                              onclick="copyShareLink(event)"
+                            >
+                              <i class="fas fa-share-alt"></i>
+                              <span id="share-text">Share</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- <div class="ltn__social-media">
+                        <ul>
                           <li>Share:</li>
                           <li>
                             <a href="#" title="Facebook"
@@ -736,7 +750,7 @@
                             ></a>
                           </li>
                         </ul>
-                      </div>
+                      </div> -->
                       <hr />
                       <!-- <div class="ltn__safe-checkout">
                         <h5>Guaranteed Safe Checkout</h5>
@@ -2082,5 +2096,19 @@
     <!-- Main JS -->
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
+    <script>
+      function copyShareLink(event) {
+        event.preventDefault();
+        const linkToCopy = "https://yourwebsite.com/product-page"; // Replace with your link
+        const shareText = document.getElementById("share-text");
+
+        navigator.clipboard.writeText(linkToCopy).then(() => {
+          shareText.textContent = "Copied!";
+          setTimeout(() => {
+            shareText.textContent = "Share";
+          }, 2000); // Revert after 2 seconds
+        });
+      }
+    </script>
   </body>
 </html>

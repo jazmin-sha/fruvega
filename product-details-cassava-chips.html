@@ -651,6 +651,11 @@
                           </li>
                         </ul>
                       </div>
+                      <div class="button-container">
+                        <button class="button dashed">250 g</button>
+                        <button class="button dashed">500 g</button>
+                        <!-- <button class="button plain">250g</button> -->
+                      </div>
                       <div class="ltn__product-details-menu-2">
                         <ul>
                           <!-- <li>
@@ -667,12 +672,12 @@
                             <a
                               href="#"
                               class="theme-btn-1 btn btn-effect-1"
-                              title="Add to Cart"
+                              title="Buy on Amazon"
                               data-bs-toggle="modal"
                               data-bs-target="#add_to_cart_modal"
                             >
-                              <i class="fas fa-shopping-cart"></i>
-                              <span>ADD TO CART</span>
+                              <span>BUY ON</span>
+                              <i class="fab fa-amazon"></i>
                             </a>
                           </li>
                         </ul>
@@ -708,26 +713,15 @@
                       <hr />
                       <div class="ltn__social-media">
                         <ul>
-                          <li>Share:</li>
                           <li>
-                            <a href="#" title="Facebook"
-                              ><i class="fab fa-facebook-f"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="#" title="Twitter"
-                              ><i class="fab fa-twitter"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="#" title="Linkedin"
-                              ><i class="fab fa-linkedin"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a href="#" title="Instagram"
-                              ><i class="fab fa-instagram"></i
-                            ></a>
+                            <a
+                              href="#"
+                              title="Copy Link"
+                              onclick="copyShareLink(event)"
+                            >
+                              <i class="fas fa-share-alt"></i>
+                              <span id="share-text">Share</span>
+                            </a>
                           </li>
                         </ul>
                       </div>
@@ -2075,5 +2069,19 @@
     <!-- Main JS -->
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
+    <script>
+      function copyShareLink(event) {
+        event.preventDefault();
+        const linkToCopy = "https://yourwebsite.com/product-page"; // Replace with your link
+        const shareText = document.getElementById("share-text");
+
+        navigator.clipboard.writeText(linkToCopy).then(() => {
+          shareText.textContent = "Copied!";
+          setTimeout(() => {
+            shareText.textContent = "Share";
+          }, 2000); // Revert after 2 seconds
+        });
+      }
+    </script>
   </body>
 </html>
