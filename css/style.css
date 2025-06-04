@@ -15750,6 +15750,58 @@ input.cart-plus-minus-box {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+/* ---------------------------------------- */
+
+.amazon-button {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 6px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.amazon-button:hover {
+  transform: scale(1.05);
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-text {
+  font-size: 10px;
+  margin-bottom: 1px;
+}
+
+.brand-line {
+  display: flex;
+  align-items: center;
+}
+
+.amazon-logo {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 1px;
+}
+
+.dotcom {
+  font-size: 12px;
+}
+
+.arrow {
+  color: #f90;
+  font-size: 18px;
+  margin-left: 6px;
+  font-weight: bold;
+}
+
+/* ---------------------------------------- */
 
 @media (min-width: 768px) and (max-width: 991px) {
   .btn {
