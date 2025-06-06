@@ -286,7 +286,7 @@
         const countryMap = { US: 'USA', IN: 'India', CA: 'CAD' };
         const countryKey = countryMap[countryCode] || 'USA';
 
-        if (window.location.pathname.includes('shop-grid.html')) {
+        if (window.location.pathname.includes('/shop-grid')) {
             renderCategoryFilter(pricesData.products);
             const filter = document.querySelector(
                 '.ltn__shop-options select.nice-select'
