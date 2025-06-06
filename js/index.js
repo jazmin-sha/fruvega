@@ -327,8 +327,8 @@
                 `Product ID not found for URL: ${window.location.pathname}`
             );
             console.log(`File name: ${file}`);
-            console.log(`Using map: ${map[file]}`);
-            return map[file] || null;
+            console.log(`Using map: ${map[`/${file}`]}`);
+            return map[`/${file}`] || null;
         }
 
         const productId = getProductIdFromUrl();
