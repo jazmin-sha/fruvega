@@ -274,14 +274,20 @@
                 row.innerHTML = '';
                 products.forEach((product) => {
                     const priceInfo =
-                        product.prices[countryKey] || product.prices['USA'];
-                    const symbol = currencySymbols[priceInfo.currency];
-                    const currentPrice = `${symbol}${priceInfo.amount.toFixed(
-                        2
-                    )}`;
-                    const originalPrice = priceInfo.original
-                        ? `${symbol}${priceInfo.original.toFixed(2)}`
+                        (product.prices[countryKey] &&
+                            product.prices[countryKey][weight]) ||
+                        (product.prices['USA'] &&
+                            product.prices['USA'][weight]);
+                    const symbol = priceInfo
+                        ? currencySymbols[priceInfo.currency]
                         : '';
+                    const currentPrice = priceInfo
+                        ? `${symbol}${priceInfo.amount.toFixed(2)}`
+                        : '';
+                    const originalPrice =
+                        priceInfo && priceInfo.original
+                            ? `${symbol}${priceInfo.original.toFixed(2)}`
+                            : '';
                     row.innerHTML += `
                     <div class="col-lg-12">
                       <div class="ltn__product-item ltn__product-item-3">
@@ -505,7 +511,6 @@
                 (product.prices[countryKey] &&
                     product.prices[countryKey][weight]) ||
                 (product.prices['USA'] && product.prices['USA'][weight]);
-
             const symbol = priceInfo ? currencySymbols[priceInfo.currency] : '';
             const currentPrice = priceInfo
                 ? `${symbol}${priceInfo.amount.toFixed(2)}`
