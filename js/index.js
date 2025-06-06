@@ -323,10 +323,15 @@
                 '/product-details-cassava-chips': 'P005',
                 '/product-details-onion-dehydtrated': 'P006'
             };
+            console.log(
+                `Product ID not found for URL: ${window.location.pathname}`
+            );
+            console.log(`Using map: ${map[file]}`);
             return map[file] || null;
         }
 
         const productId = getProductIdFromUrl();
+
         if (productId) {
             const product = pricesData.products.find((p) => p.id === productId);
             if (product) {
