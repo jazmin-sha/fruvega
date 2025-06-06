@@ -515,10 +515,11 @@
         // Default: Replace price placeholders in HTML
         let html = document.documentElement.innerHTML;
         for (const product of pricesData.products) {
+            const defaultWeight = product.weights[0];
             const priceInfo =
                 (product.prices[countryKey] &&
-                    product.prices[countryKey][weight]) ||
-                (product.prices['USA'] && product.prices['USA'][weight]);
+                    product.prices[countryKey][defaultWeight]) ||
+                (product.prices['USA'] && product.prices['USA'][defaultWeight]);
             const symbol = priceInfo ? currencySymbols[priceInfo.currency] : '';
             const currentPrice = priceInfo
                 ? `${symbol}${priceInfo.amount.toFixed(2)}`
