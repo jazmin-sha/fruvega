@@ -426,8 +426,13 @@
                     }
                     // Update price and original price for selected weight
                     const priceInfo =
-                        product.prices[countryKey] || product.prices['USA'];
-                    const symbol = currencySymbols[priceInfo.currency];
+                        (product.prices[countryKey] &&
+                            product.prices[countryKey][weight]) ||
+                        (product.prices['USA'] &&
+                            product.prices['USA'][weight]);
+                    const symbol = priceInfo
+                        ? currencySymbols[priceInfo.currency]
+                        : '';
                     // If your prices are per weight, use product.prices[countryKey][weight]
                     // Otherwise, just use priceInfo as you do now
 
@@ -439,17 +444,19 @@
                             `.price[data-product="${product.id}"]`
                         )
                         .forEach((span) => {
-                            span.textContent =
-                                symbol + (priceInfo.amount?.toFixed(2) ?? '');
+                            span.textContent = priceInfo
+                                ? symbol + priceInfo.amount.toFixed(2)
+                                : '';
                         });
                     document
                         .querySelectorAll(
                             `.original_price[data-product="${product.id}"]`
                         )
                         .forEach((span) => {
-                            span.textContent = priceInfo.original
-                                ? symbol + priceInfo.original.toFixed(2)
-                                : '';
+                            span.textContent =
+                                priceInfo && priceInfo.original
+                                    ? symbol + priceInfo.original.toFixed(2)
+                                    : '';
                         });
                 }
 
