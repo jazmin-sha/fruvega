@@ -316,12 +316,12 @@
             const file = path.substring(path.lastIndexOf('/') + 1);
             // Map filename to productId
             const map = {
-                'product-details-banana-chips.html': 'P002',
-                'product-details-no-sidebar.html': 'P001',
-                'product-details-ginger-powder.html': 'P003',
-                'product-details-chilli-powder.html': 'P004',
-                'product-details-cassava-chips.html': 'P005',
-                'product-details-onion-dehydtrated.html': 'P006'
+                '/product-details-banana-chips': 'P002',
+                '/product-details-no-sidebar': 'P001',
+                '/product-details-ginger-powder': 'P003',
+                '/product-details-chilli-powder': 'P004',
+                '/product-details-cassava-chips': 'P005',
+                '/product-details-onion-dehydtrated': 'P006'
             };
             return map[file] || null;
         }
