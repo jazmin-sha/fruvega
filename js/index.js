@@ -262,12 +262,6 @@
         const filter = document.querySelector(
             '.ltn__shop-options select.nice-select'
         );
-
-
-            'Rendering category filter with products:',
-            filter,
-            products
-        );
         if (filter) {
             filter.innerHTML = '';
             const allOpt = document.createElement('option');
@@ -293,11 +287,10 @@
         const countryKey = countryMap[countryCode] || 'USA';
 
         if (window.location.pathname.includes('shop-grid.html')) {
-            renderCategoryFilter(pricesData.products); // <-- Add this line
+            renderCategoryFilter(pricesData.products);
             const filter = document.querySelector(
                 '.ltn__shop-options select.nice-select'
             );
-
 
             renderProducts(pricesData.products, countryKey);
 
