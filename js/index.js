@@ -13,9 +13,18 @@
                 category: 'Spices',
                 weights: [75, 250],
                 prices: {
-                    USA: { amount: 2.99, currency: 'USD', original: 3.99 },
-                    India: { amount: 118.0, currency: 'INR', original: 155.0 },
-                    CAD: { amount: 2.5, currency: 'CAD', original: 3.0 }
+                    USA: {
+                        75: { amount: 2.99, currency: 'USD', original: 3.99 },
+                        250: { amount: 2.99, currency: 'USD', original: 3.99 }
+                    },
+                    India: {
+                        75: { amount: 118.0, currency: 'INR', original: 155.0 },
+                        250: { amount: 118.0, currency: 'INR', original: 155.0 }
+                    },
+                    CAD: {
+                        75: { amount: 2.5, currency: 'CAD', original: 3.0 },
+                        250: { amount: 2.5, currency: 'CAD', original: 3.0 }
+                    }
                 },
                 amazonLinks: {
                     India: {
@@ -36,9 +45,15 @@
                 category: 'Chips',
                 weights: [100],
                 prices: {
-                    USA: { amount: 1.99, currency: 'USD', original: 2.5 },
-                    India: { amount: 99.0, currency: 'INR', original: 140.0 },
-                    CAD: { amount: 1.75, currency: 'CAD', original: 2.0 }
+                    USA: {
+                        100: { amount: 1.99, currency: 'USD', original: 2.5 }
+                    },
+                    India: {
+                        100: { amount: 99.0, currency: 'INR', original: 140.0 }
+                    },
+                    CAD: {
+                        100: { amount: 1.75, currency: 'CAD', original: 2.0 }
+                    }
                 },
                 amazonLinks: {
                     India: {
@@ -55,9 +70,18 @@
                 category: 'Spices',
                 weights: [75, 250],
                 prices: {
-                    USA: { amount: 3.49, currency: 'USD', original: 4.0 },
-                    India: { amount: 168.0, currency: 'INR', original: 280.0 },
-                    CAD: { amount: 2.8, currency: 'CAD', original: 3.5 }
+                    USA: {
+                        75: { amount: 3.49, currency: 'USD', original: 4.0 },
+                        250: { amount: 9.99, currency: 'USD', original: 12.0 }
+                    },
+                    India: {
+                        75: { amount: 168.0, currency: 'INR', original: 280.0 },
+                        250: { amount: 499.0, currency: 'INR', original: 600.0 }
+                    },
+                    CAD: {
+                        75: { amount: 2.8, currency: 'CAD', original: 3.5 },
+                        250: { amount: 7.5, currency: 'CAD', original: 9.0 }
+                    }
                 },
                 amazonLinks: {
                     India: {
@@ -78,9 +102,18 @@
                 category: 'Spices',
                 weights: [75, 250],
                 prices: {
-                    USA: { amount: 3.49, currency: 'USD', original: 4.0 },
-                    India: { amount: 199.0, currency: 'INR', original: 280.0 },
-                    CAD: { amount: 2.8, currency: 'CAD', original: 3.5 }
+                    USA: {
+                        75: { amount: 3.49, currency: 'USD', original: 4.0 },
+                        250: { amount: 3.49, currency: 'USD', original: 4.0 }
+                    },
+                    India: {
+                        75: { amount: 199.0, currency: 'INR', original: 280.0 },
+                        250: { amount: 499.0, currency: 'INR', original: 600.0 }
+                    },
+                    CAD: {
+                        75: { amount: 2.8, currency: 'CAD', original: 3.5 },
+                        250: { amount: 7.5, currency: 'CAD', original: 9.0 }
+                    }
                 },
                 amazonLinks: {
                     India: {
@@ -101,9 +134,22 @@
                 category: 'Chips',
                 weights: [100, 250],
                 prices: {
-                    USA: { amount: 3.49, currency: 'USD', original: 4.0 },
-                    India: { amount: 200.0, currency: 'INR', original: 240.0 },
-                    CAD: { amount: 2.8, currency: 'CAD', original: 3.5 }
+                    USA: {
+                        100: { amount: 3.49, currency: 'USD', original: 4.0 },
+                        250: { amount: 9.99, currency: 'USD', original: 12.0 }
+                    },
+                    India: {
+                        100: {
+                            amount: 200.0,
+                            currency: 'INR',
+                            original: 240.0
+                        },
+                        250: { amount: 499.0, currency: 'INR', original: 600.0 }
+                    },
+                    CAD: {
+                        100: { amount: 2.8, currency: 'CAD', original: 3.5 },
+                        250: { amount: 7.5, currency: 'CAD', original: 9.0 }
+                    }
                 },
                 amazonLinks: {
                     India: {
@@ -124,9 +170,22 @@
                 category: 'Vegetables',
                 weights: [100, 250],
                 prices: {
-                    USA: { amount: 3.49, currency: 'USD', original: 4.0 },
-                    India: { amount: 200.0, currency: 'INR', original: 240.0 },
-                    CAD: { amount: 2.8, currency: 'CAD', original: 3.5 }
+                    USA: {
+                        100: { amount: 3.49, currency: 'USD', original: 4.0 },
+                        250: { amount: 9.99, currency: 'USD', original: 12.0 }
+                    },
+                    India: {
+                        100: {
+                            amount: 200.0,
+                            currency: 'INR',
+                            original: 240.0
+                        },
+                        250: { amount: 499.0, currency: 'INR', original: 600.0 }
+                    },
+                    CAD: {
+                        100: { amount: 2.8, currency: 'CAD', original: 3.5 },
+                        250: { amount: 7.5, currency: 'CAD', original: 9.0 }
+                    }
                 },
                 amazonLinks: {
                     India: {
@@ -365,6 +424,33 @@
                             );
                         });
                     }
+                    // Update price and original price for selected weight
+                    const priceInfo =
+                        product.prices[countryKey] || product.prices['USA'];
+                    const symbol = currencySymbols[priceInfo.currency];
+                    // If your prices are per weight, use product.prices[countryKey][weight]
+                    // Otherwise, just use priceInfo as you do now
+
+                    // If you want to support different prices per weight, use this:
+                    // const priceInfo = product.prices[countryKey][weight] || product.prices['USA'][weight];
+
+                    document
+                        .querySelectorAll(
+                            `.price[data-product="${product.id}"]`
+                        )
+                        .forEach((span) => {
+                            span.textContent =
+                                symbol + (priceInfo.amount?.toFixed(2) ?? '');
+                        });
+                    document
+                        .querySelectorAll(
+                            `.original_price[data-product="${product.id}"]`
+                        )
+                        .forEach((span) => {
+                            span.textContent = priceInfo.original
+                                ? symbol + priceInfo.original.toFixed(2)
+                                : '';
+                        });
                 }
 
                 if (weightsDiv) {
