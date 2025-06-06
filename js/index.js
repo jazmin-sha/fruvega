@@ -433,6 +433,13 @@
                     const symbol = priceInfo
                         ? currencySymbols[priceInfo.currency]
                         : '';
+                    const currentPrice = priceInfo
+                        ? `${symbol}${priceInfo.amount.toFixed(2)}`
+                        : '';
+                    const originalPrice =
+                        priceInfo && priceInfo.original
+                            ? `${symbol}${priceInfo.original.toFixed(2)}`
+                            : '';
                     // If your prices are per weight, use product.prices[countryKey][weight]
                     // Otherwise, just use priceInfo as you do now
 
@@ -444,19 +451,14 @@
                             `.price[data-product="${product.id}"]`
                         )
                         .forEach((span) => {
-                            span.textContent = priceInfo
-                                ? symbol + priceInfo.amount.toFixed(2)
-                                : '';
+                            span.textContent = currentPrice;
                         });
                     document
                         .querySelectorAll(
                             `.original_price[data-product="${product.id}"]`
                         )
                         .forEach((span) => {
-                            span.textContent =
-                                priceInfo && priceInfo.original
-                                    ? symbol + priceInfo.original.toFixed(2)
-                                    : '';
+                            span.textContent = originalPrice;
                         });
                 }
 
@@ -500,12 +502,18 @@
         let html = document.documentElement.innerHTML;
         for (const product of pricesData.products) {
             const priceInfo =
-                product.prices[countryKey] || product.prices['USA'];
-            const symbol = currencySymbols[priceInfo.currency];
-            const currentPrice = `${symbol}${priceInfo.amount.toFixed(2)}`;
-            const originalPrice = priceInfo.original
-                ? `${symbol}${priceInfo.original.toFixed(2)}`
+                (product.prices[countryKey] &&
+                    product.prices[countryKey][weight]) ||
+                (product.prices['USA'] && product.prices['USA'][weight]);
+
+            const symbol = priceInfo ? currencySymbols[priceInfo.currency] : '';
+            const currentPrice = priceInfo
+                ? `${symbol}${priceInfo.amount.toFixed(2)}`
                 : '';
+            const originalPrice =
+                priceInfo && priceInfo.original
+                    ? `${symbol}${priceInfo.original.toFixed(2)}`
+                    : '';
             const productName = product.name;
 
             // Update all price placeholders for this product
