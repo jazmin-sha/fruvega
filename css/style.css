@@ -15801,6 +15801,10 @@ input.cart-plus-minus-box {
   font-weight: bold;
 }
 
+.amazon-logo-class {
+  height: 40% !important;
+  width: 50% !important;
+}
 /* ---------------------------------------- */
 
 @media (min-width: 768px) and (max-width: 991px) {
