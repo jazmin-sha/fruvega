@@ -6804,7 +6804,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     margin-left: 0;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    /*flex: 0 0 100%;*/
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -8030,7 +8030,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   }
   .ltn__slide-item-2 {
     height: auto;
-    padding-top: 300px;
+    /*padding-top: 300px;*/
   }
   .ltn__slide-item-2 .slide-title {
     font-size: 30px;
@@ -8899,6 +8899,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 /* product-details-menu-2 */
 .ltn__product-details-menu-2 ul {
   padding: 0;
+  padding-top: 10px;
   margin: 0;
 }
 .ltn__product-details-menu-2 ul li {
