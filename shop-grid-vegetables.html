@@ -343,9 +343,7 @@
                 class="ltn__breadcrumb-inner ltn__breadcrumb-inner-2 justify-content-between"
               >
                 <div class="section-title-area ltn__section-title-2">
-                  <h1 class="section-title-color">
-                    Explore Our Tasty Trio: Veggies, Spices & Chips!
-                  </h1>
+                  <h1 class="section-title white-color">Crispy Creations</h1>
                 </div>
                 <div class="ltn__breadcrumb-list">
                   <ul>
@@ -360,57 +358,545 @@
       </div>
       <!-- BREADCRUMB AREA END -->
 
-      <!-- BANNER AREA START -->
-      <div class="ltn__banner-area mt-120">
+      <!-- PRODUCT DETAILS AREA START -->
+      <div class="ltn__product-area ltn__product-gutter mb-120">
         <div class="container">
-          <div class="row ltn__custom-gutter--- justify-content-center">
-            <div class="col-lg-6 col-md-6">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="ltn__banner-item">
-                    <div class="ltn__banner-img">
-                      <a href="shop-grid.html"
-                        ><img
-                          src="img/others/cassavahalfimage.jpg"
-                          alt="Banner Image"
-                      /></a>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="ltn__shop-options">
+                <ul>
+                  <li>
+                    <div class="ltn__grid-list-tab-menu">
+                      <div class="nav">
+                        <a
+                          class="active show"
+                          data-bs-toggle="tab"
+                          href="#liton_product_grid"
+                          ><i class="fas fa-th-large"></i
+                        ></a>
+                        <a data-bs-toggle="tab" href="#liton_product_list"
+                          ><i class="fas fa-list"></i
+                        ></a>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="ltn__banner-item">
-                    <div class="ltn__banner-img">
-                      <a href="shop-grid-spices.html"
-                        ><img
-                          src="img/others//cassavahalfimage2.jpg"
-                          alt="Banner Image"
-                      /></a>
+                  </li>
+
+                  <li>
+                    <div class="short-by text-center">
+                      <!-- <select class="nice-select" id="categoryFilter"> -->
+                      <!-- <option>All</option>
+                                                <option>Vegetables</option>
+                                                <option>Powders</option>
+                                                <option>Chips</option>
+                                                <option>Spices</option> -->
+                      <!-- </select> -->
                     </div>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="ltn__banner-item">
-                    <div class="ltn__banner-img">
-                      <a href="shop-grid-vegetables.html"
-                        ><img
-                          src="img/others/cassavahalfimage.jpg"
-                          alt="Banner Image"
-                      /></a>
+              <!-- grid one -->
+              <div class="tab-content">
+                <div class="tab-pane fade active show" id="liton_product_grid">
+                  <div
+                    class="ltn__product-tab-content-inner ltn__product-grid-view"
+                  >
+                    <div class="row">
+                      <!-- ltn__product-item -->
+                      <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
+                        <div
+                          class="ltn__product-item ltn__product-item-3 text-center"
+                        >
+                          <div class="product-img">
+                            <a href="product-details-no-sidebar.html"
+                              ><img src="img/gallery/product1F.jpg" alt="#"
+                            /></a>
+                            <!-- <div class="product-badge">
+                              <ul>
+                                <li class="sale-badge">New</li>
+                              </ul>
+                            </div> -->
+                          </div>
+                          <div class="product-info">
+                            <div class="product-ratting"></div>
+                            <h2 class="product-title">
+                              <a href="product-details-no-sidebar.html"
+                                >Dehydrated Garlic Powder</a
+                              >
+                            </h2>
+                            <div class="product-price">
+                              <span id="price-P001">{{price_P001}}</span>
+                              <del id="original-price-P001"
+                                >{{original_price_P001}}</del
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ltn__product-item -->
+                      <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
+                        <div
+                          class="ltn__product-item ltn__product-item-3 text-center"
+                        >
+                          <div class="product-img">
+                            <a href="product-details-banana-chips.html"
+                              ><img src="img/gallery/product2F.jpg" alt="#"
+                            /></a>
+                          </div>
+                          <div class="product-info">
+                            <div class="product-ratting"></div>
+                            <h2 class="product-title">
+                              <a href="product-details-banana-chips.html"
+                                >Vacuum Fried Banana Chips</a
+                              >
+                            </h2>
+                            <div class="product-price">
+                              <span>{{price_P002}}</span>
+                              <del>{{original_price_P002}}</del>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ltn__product-item -->
+                      <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
+                        <div
+                          class="ltn__product-item ltn__product-item-3 text-center"
+                        >
+                          <div class="product-img">
+                            <a href="product-details-ginger-powder.html"
+                              ><img src="img/gallery/product3F.jpg" alt="#"
+                            /></a>
+                            <div class="product-badge">
+                              <!-- <ul>
+                                <li class="sale-badge">Hot</li>
+                              </ul> -->
+                            </div>
+                          </div>
+                          <div class="product-info">
+                            <div class="product-ratting"></div>
+                            <h2 class="product-title">
+                              <a href="product-details-ginger-powder.html"
+                                >Dehydrated Ginger Powder</a
+                              >
+                            </h2>
+                            <div class="product-price">
+                              <span>{{price_P003}}</span>
+                              <del>{{original_price_P003}}</del>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ltn__product-item -->
+                      <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
+                        <div
+                          class="ltn__product-item ltn__product-item-3 text-center"
+                        >
+                          <div class="product-img">
+                            <a href="product-details-chilli-powder.html"
+                              ><img src="img/gallery/product4F.jpg" alt="#"
+                            /></a>
+                          </div>
+                          <div class="product-info">
+                            <div class="product-ratting"></div>
+                            <h2 class="product-title">
+                              <a href="product-details-chilli-powder.html"
+                                >Green Chilli Powder</a
+                              >
+                            </h2>
+                            <div class="product-price">
+                              <span>{{price_P004}}</span>
+                              <del>{{original_price_P004}}</del>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ltn__product-item -->
+                      <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
+                        <div
+                          class="ltn__product-item ltn__product-item-3 text-center"
+                        >
+                          <div class="product-img">
+                            <a href="product-details-cassava-chips.html"
+                              ><img src="img/gallery/product5F.jpg" alt="#"
+                            /></a>
+                            <div class="product-badge">
+                              <!-- <ul>
+                                <li class="sale-badge">Sell -25%</li>
+                              </ul> -->
+                            </div>
+                          </div>
+                          <div class="product-info">
+                            <div class="product-ratting"></div>
+                            <h2 class="product-title">
+                              <a href="product-details-cassava-chips.html"
+                                >Dehydrated Cassava Chunks</a
+                              >
+                            </h2>
+                            <div class="product-price">
+                              <span>{{price_P005}}</span>
+                              <del>{{original_price_P005}}</del>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ltn__product-item -->
+                      <div class="col-xl-3 col-lg-4 col-sm-6 col-6">
+                        <div
+                          class="ltn__product-item ltn__product-item-3 text-center"
+                        >
+                          <div class="product-img">
+                            <a href="product-details-onion-dehydtrated.html"
+                              ><img src="img/gallery/product6F.jpg" alt="#"
+                            /></a>
+                          </div>
+                          <div class="product-info">
+                            <div class="product-ratting"></div>
+                            <h2 class="product-title">
+                              <a href="product-details-onion-dehydtrated.html"
+                                >Dehydrated Red Onion Sliced</a
+                              >
+                            </h2>
+                            <div class="product-price">
+                              <span>{{price_P006}}</span>
+                              <del>{{original_price_P006}}</del>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="ltn__banner-item">
-                    <div class="ltn__banner-img">
-                      <a href="shop-grid-chips.html"
-                        ><img
-                          src="img/others//cassavahalfimage2.jpg"
-                          alt="Banner Image"
-                      /></a>
+                <!-- grid one two -->
+                <div class="tab-pane fade" id="liton_product_list">
+                  <div
+                    class="ltn__product-tab-content-inner ltn__product-list-view"
+                  >
+                    <div class="row">
+                      <!-- ltn__product-item -->
+                      <div class="col-lg-12">
+                        <div class="ltn__product-item ltn__product-item-3">
+                          <div class="product-img">
+                            <a href="product-details-no-sidebar.html"
+                              ><img src="img/gallery/product1F.jpg" alt="#"
+                            /></a>
+                            <div class="product-badge">
+                              <ul>
+                                <!-- <li class="sale-badge">New</li> -->
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="product-info">
+                            <h2 class="product-title">
+                              <a href="product-details-no-sidebar.html"
+                                >Dehydrated Garlic Powder</a
+                              >
+                            </h2>
+
+                            <div class="product-price">
+                              <span>{{price_P001}}</span>
+                              <del>{{original_price_P001}}</del>
+                            </div>
+                            <div
+                              class="modal-product-meta ltn__product-details-menu-1"
+                            >
+                              <ul>
+                                <li>
+                                  <strong
+                                    >Fresh Indian Garlic Powder – Responsibly
+                                    sourced for bold flavour
+                                  </strong>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="product-brief">
+                              <p>
+                                Unlock the essential flavor of garlic with
+                                Fruvega's Dehydrated Garlic Powder. Produced
+                                using state-of-the-art technology, this powder
+                                captures the robust aroma and taste of fresh
+                                garlic cloves. Its fine texture blends smoothly,
+                                ensuring even flavor distribution. This
+                                long-lasting pantry item simplifies cooking prep
+                                significantly, allowing you to add delicious
+                                garlic flavor instantly. It’s a fundamental
+                                ingredient that ensures you always have
+                                high-quality garlic on hand, making healthy and
+                                flavorful cooking effortless.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ltn__product-item -->
+                      <div class="col-lg-12">
+                        <div class="ltn__product-item ltn__product-item-3">
+                          <div class="product-img">
+                            <a href="product-details-banana-chips.html"
+                              ><img src="img/gallery/product2F.jpg" alt="#"
+                            /></a>
+                          </div>
+                          <div class="product-info">
+                            <h2 class="product-title">
+                              <a href="product-details-banana-chips.html"
+                                >Vacuum Fried Banana Chips</a
+                              >
+                            </h2>
+
+                            <div class="product-price">
+                              <span>{{price_P002}}</span>
+                              <del>{{original_price_P002}}</del>
+                            </div>
+                            <div
+                              class="modal-product-meta ltn__product-details-menu-1"
+                            >
+                              <ul>
+                                <li>
+                                  <strong
+                                    >Naturally Sweet Bananas – Sourced from
+                                    high-quality Indian farms
+                                  </strong>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="product-brief">
+                              <p>
+                                Enjoy a healthier twist on a classic snack with
+                                Fruvega's Vacuum Fried Banana Chips. Made from
+                                ripe bananas and processed using advanced vacuum
+                                frying technology, these chips offer a crispy
+                                texture and the natural sweetness of bananas.
+                                This method results in chips with 65% less fat
+                                than traditional oil-fried banana chips, making
+                                them a smarter snack choice. They provide a
+                                guilt-free way to satisfy your snack cravings
+                                while enjoying the natural goodness of bananas.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ltn__product-item -->
+                      <div class="col-lg-12">
+                        <div class="ltn__product-item ltn__product-item-3">
+                          <div class="product-img">
+                            <a href="product-details-ginger-powder.html"
+                              ><img src="img/gallery/product3F.jpg" alt="#"
+                            /></a>
+                            <div class="product-badge">
+                              <!-- <ul>
+                                <li class="sale-badge">New</li>
+                              </ul> -->
+                            </div>
+                          </div>
+                          <div class="product-info">
+                            <h2 class="product-title">
+                              <a href="product-details-ginger-powder.html"
+                                >Dehydrated Ginger Powder</a
+                              >
+                            </h2>
+
+                            <div class="product-price">
+                              <span>{{price_P003}}</span>
+                              <del>{{original_price_P003}}</del>
+                            </div>
+                            <div
+                              class="modal-product-meta ltn__product-details-menu-1"
+                            >
+                              <ul>
+                                <li>
+                                  <strong
+                                    >Premium Indian Ginger – Sourced fresh from
+                                    trusted farms
+                                  </strong>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="product-brief">
+                              <p>
+                                Experience the warm, pungent flavor of ginger in
+                                a convenient powder form. Fruvega's Dehydrated
+                                Ginger Powder is produced using state-of-the-art
+                                technology to capture the essence and
+                                nutritional value of fresh ginger. Perfect for
+                                adding depth to curries, marinades, baked goods,
+                                teas, and smoothies. Just a pinch delivers
+                                concentrated flavor and aroma, seamlessly
+                                integrating into your recipes. It's an ideal way
+                                to enjoy the health benefits of ginger with
+                                ultimate ease and reliability, bringing nature's
+                                goodness to your cooking without the fuss of
+                                fresh preparation.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ltn__product-item -->
+                      <div class="col-lg-12">
+                        <div class="ltn__product-item ltn__product-item-3">
+                          <div class="product-img">
+                            <a href="product-details-chilli-powder.html"
+                              ><img src="img/gallery/product4F.jpg" alt="#"
+                            /></a>
+                          </div>
+                          <div class="product-info">
+                            <h2 class="product-title">
+                              <a href="product-details-chilli-powder.html"
+                                >Green Chilli Powder</a
+                              >
+                            </h2>
+
+                            <div class="product-price">
+                              <span>{{price_P004}}</span>
+                              <del>{{original_price_P004}}</del>
+                            </div>
+                            <div
+                              class="modal-product-meta ltn__product-details-menu-1"
+                            >
+                              <ul>
+                                <li>
+                                  <strong
+                                    >Made from Fresh Green Chillies – Sourced
+                                    from trusted Indian farms
+                                  </strong>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="product-brief">
+                              <p>
+                                Add a kick of heat to your dishes with Fruvega's
+                                Dehydrated Green Chilli Powder. Made from
+                                high-quality green chillies and processed with
+                                advanced dehydration technology, this powder
+                                retains the vibrant flavor and fiery intensity
+                                of fresh chillies. It offers unparalleled
+                                convenience, providing a consistent level of
+                                spice without the variability or short lifespan
+                                of fresh chillies. Ideal for seasoning curries,
+                                sauces, snacks, and spice blends. Its powdered
+                                form ensures easy dispersion and integration
+                                into both wet and dry applications. Enjoy the
+                                natural zest and heat of green chillies anytime,
+                                anywhere, without the hassle of chopping or
+                                handling fresh produce. This product is perfect
+                                for those seeking reliable heat and flavor,
+                                simplifying kitchen tasks while delivering
+                                authentic taste.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ltn__product-item -->
+                      <div class="col-lg-12">
+                        <div class="ltn__product-item ltn__product-item-3">
+                          <div class="product-img">
+                            <a href="product-details-cassava-chips.html"
+                              ><img src="img/gallery/product5F.jpg" alt="#"
+                            /></a>
+                            <div class="product-badge">
+                              <!-- <ul>
+                                <li class="sale-badge">Hot</li>
+                              </ul> -->
+                            </div>
+                          </div>
+                          <div class="product-info">
+                            <h2 class="product-title">
+                              <a href="product-details-cassava-chips.html"
+                                >Dehydrated Cassava Chunks</a
+                              >
+                            </h2>
+
+                            <div class="product-price">
+                              <span>{{price_P005}}</span>
+                              <del>{{original_price_P005}}</del>
+                            </div>
+                            <div
+                              class="modal-product-meta ltn__product-details-menu-1"
+                            >
+                              <ul>
+                                <li>
+                                  <strong
+                                    >High-Quality Cassava – Ethically sourced
+                                    from trusted Indian farms
+                                  </strong>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="product-brief">
+                              <p>
+                                Discover the versatility of cassava with
+                                Fruvega's Dehydrated Cassava Chunks. Processed
+                                using state-of-the-art technology, these chunks
+                                retain the natural texture and subtle flavor of
+                                fresh cassava. These chunks rehydrate well and
+                                become tender upon cooking, suitable for a
+                                variety of dishes, including stews, soups, and
+                                curries. Enjoy the wholesome goodness of cassava
+                                with the ease and reliability that Fruvega
+                                products provide, bringing a taste of nature
+                                conveniently to your home.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ltn__product-item -->
+                      <div class="col-lg-12">
+                        <div class="ltn__product-item ltn__product-item-3">
+                          <div class="product-img">
+                            <a href="product-details-onion-dehydtrated.html"
+                              ><img src="img/gallery/product6F.jpg" alt="#"
+                            /></a>
+                            <div class="product-badge">
+                              <!-- <ul>
+                                <li class="sale-badge">New</li>
+                              </ul> -->
+                            </div>
+                          </div>
+                          <div class="product-info">
+                            <h2 class="product-title">
+                              <a href="product-details-onion-dehydtrated.html"
+                                >Dehydrated Red Onion Sliced</a
+                              >
+                            </h2>
+                            <div class="product-ratting"></div>
+                            <div class="product-price">
+                              <span>{{price_P006}}</span>
+                              <del>{{original_price_P006}}</del>
+                            </div>
+                            <div
+                              class="modal-product-meta ltn__product-details-menu-1"
+                            >
+                              <ul>
+                                <li>
+                                  <strong
+                                    >Premium Indian Red Onions – Ethically
+                                    sourced and farm-fresh
+                                  </strong>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="product-brief">
+                              <p>
+                                Simplify your cooking with Fruvega's Dehydrated
+                                Red Onion Slices. Using advanced dehydration
+                                technology, these slices retain the natural
+                                sweetness and slightly pungent flavor of fresh
+                                red onions. These slices rehydrate beautifully
+                                in liquids, becoming tender and flavorful,
+                                perfect for adding to curries, stews, soups, and
+                                casseroles. They can also be used dry in spice
+                                mixes or as a crunchy topping when toasted
+                                lightly. Enjoy the authentic taste and texture
+                                of red onions with unparalleled ease, reducing
+                                food waste and bringing nature's goodness
+                                conveniently to your kitchen.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
                     </div>
                   </div>
                 </div>
@@ -419,10 +905,6 @@
           </div>
         </div>
       </div>
-      <!-- BANNER AREA END -->
-
-      <!-- PRODUCT DETAILS AREA START -->
-      <div class="ltn__product-area ltn__product-gutter mb-120"></div>
       <!-- PRODUCT DETAILS AREA END -->
 
       <!-- FEATURE AREA START ( Feature - 3) -->

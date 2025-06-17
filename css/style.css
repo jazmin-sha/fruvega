@@ -3910,6 +3910,23 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   color: white;
 }
 
+.category-buttons button {
+  margin: 5px;
+  padding: 1px 16px;
+  border: 1px solid #aaa;
+  background: #80b500;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+  color: white;
+}
+
+.category-buttons button.active {
+  background-color: #4f702a;
+  color: #fff;
+  border-color: #4f702a;
+}
+
 /* shop category */
 
 /* ----------------------------------------------------
