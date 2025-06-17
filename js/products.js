@@ -12,8 +12,8 @@
             250: { amount: 2.99, currency: "USD", original: 3.99 },
           },
           India: {
-            75: { amount: 118.0, currency: "INR", original: 155.0 },
-            250: { amount: 118.0, currency: "INR", original: 155.0 },
+            75: { amount: 110.0, currency: "INR", original: 155.0 },
+            250: { amount: 218.0, currency: "INR", original: 155.0 },
           },
           CAD: {
             75: { amount: 2.5, currency: "CAD", original: 3.0 },
