@@ -21,9 +21,9 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        // $recipient = "tunatheme@gmail.com";
+        // $recipient = "sales@fruvega.com";
         
-        $recipient = "tunatheme@gmail.com";
+        $recipient = "sales@fruvega.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
