@@ -1207,6 +1207,11 @@ object {
   display: inline-block;
 }
 
+/* logo white */
+.logowhiteclass {
+  max-width: 34% !important;
+}
+
 /* ----------------------------------------------------
     Captions
 ---------------------------------------------------- */
