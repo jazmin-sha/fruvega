@@ -15164,6 +15164,7 @@ input.cart-plus-minus-box {
   list-style: none;
   margin-top: 0px;
   margin-bottom: 15px;
+  margin-left: 0px;
   position: relative;
 }
 .footer-menu ul li a {
@@ -15841,8 +15842,8 @@ input.cart-plus-minus-box {
 }
 
 .amazon-logo-class {
-  height: 40% !important;
-  width: 50% !important;
+     height: 32% !important;
+    width: 42% !important;
 }
 /* ---------------------------------------- */
 
