@@ -15327,11 +15327,14 @@ input.cart-plus-minus-box {
 }
 
 .dashed {
-  border: 2px dashed #999;
+  border: 1px solid var(--ltn__secondary-color);
 }
 
 .plain {
-  border: 1px solid #ccc;
+  background-color: var(--ltn__secondary-color);
+  color: #fff; /* Optional: makes text readable */
+  padding: 10px; /* Optional: adds spacing inside */
+  border: none;
 }
 
 /* ----------------------------------------------------
@@ -15842,8 +15845,8 @@ input.cart-plus-minus-box {
 }
 
 .amazon-logo-class {
-     height: 32% !important;
-    width: 42% !important;
+  height: 32% !important;
+  width: 42% !important;
 }
 /* ---------------------------------------- */
 
