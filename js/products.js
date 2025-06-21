@@ -126,7 +126,7 @@
         id: "P005",
         name: "Dehydrated Cassava Chunks",
         category: "Vegetables",
-        weights: [100, 250],
+        weights: [250, 500],
         prices: {
           USA: {
             100: { amount: 3.49, currency: "USD", original: 4.0 },
@@ -162,7 +162,7 @@
         id: "P006",
         name: "Dehydrated Red Onion Sliced",
         category: "Vegetables",
-        weights: [100, 250],
+        weights: [250, 500],
         prices: {
           USA: {
             100: { amount: 3.49, currency: "USD", original: 4.0 },
