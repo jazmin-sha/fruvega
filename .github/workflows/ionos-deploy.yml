@@ -1,0 +1,22 @@
+name: Deploy to IONOS FTP
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+
+            - name: Upload to IONOS FTP
+              uses: sebastianpopp/ftp-action@v1.2.0
+              with:
+                  host: ${{ secrets.IONOS_FTP_HOST }}
+                  username: ${{ secrets.IONOS_FTP_USERNAME }}
+                  password: ${{ secrets.IONOS_FTP_PASSWORD }}
+                  localDir: ./
+                  remoteDir: ${{ secrets.IONOS_FTP_PATH }}
