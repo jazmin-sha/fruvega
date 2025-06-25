@@ -22,4 +22,3 @@ jobs:
                   port: ${{ secrets.SFTP_PORT }}
                   source: './'
                   target: ${{ secrets.SFTP_TARGET_PATH }}
-                  strip_components: 0
