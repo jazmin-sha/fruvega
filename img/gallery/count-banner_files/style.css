@@ -486,6 +486,18 @@ ol li {
 }
 
 /* -------------------------------------
+    Custom Class Banner
+------------------------------------- */
+
+.backgound-index-banner{
+  background-color: #123524
+}
+
+.text-color-white-banner{
+  color: #EFE3C2 !important;
+}
+
+/* -------------------------------------
     Custom Class
 ------------------------------------- */
 .section-bg-1 {
