@@ -1,24 +1,24 @@
-name: Deploy Static Website to IONOS (SFTP)
+# name: Deploy Static Website to IONOS (SFTP)
 
-on:
-    push:
-        branches:
-            - main
+# on:
+#     push:
+#         branches:
+#             - main
 
-jobs:
-    deploy:
-        runs-on: ubuntu-latest
+# jobs:
+#     deploy:
+#         runs-on: ubuntu-latest
 
-        steps:
-            - name: 📥 Checkout code
-              uses: actions/checkout@v3
+#         steps:
+#             - name: 📥 Checkout code
+#               uses: actions/checkout@v3
 
-            - name: 🚀 Upload to IONOS via SFTP
-              uses: appleboy/scp-action@v0.1.7
-              with:
-                  host: ${{ secrets.SFTP_HOST }}
-                  username: ${{ secrets.SFTP_USERNAME }}
-                  password: ${{ secrets.SFTP_PASSWORD }}
-                  port: ${{ secrets.SFTP_PORT }}
-                  source: './'
-                  target: ${{ secrets.SFTP_TARGET_PATH }}
+#             - name: 🚀 Upload to IONOS via SFTP
+#               uses: appleboy/scp-action@v0.1.7
+#               with:
+#                   host: ${{ secrets.SFTP_HOST }}
+#                   username: ${{ secrets.SFTP_USERNAME }}
+#                   password: ${{ secrets.SFTP_PASSWORD }}
+#                   port: ${{ secrets.SFTP_PORT }}
+#                   source: './'
+#                   target: ${{ secrets.SFTP_TARGET_PATH }}
